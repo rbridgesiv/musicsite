@@ -103,6 +103,36 @@ p {
   margin: 0 0 70px 0;
 }
 
+.videos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1330px;
+  margin-left: 0px;
+  position:relative;
+  background-color: lightgrey;
+}
+
+.performance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1330px;
+  margin-left: 0px;
+  position:relative;
+  background-color: lightgrey;
+}
+
+.scoring-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1330px;
+  margin-left: 0px;
+  position:relative;
+  background-color: lightgrey;
+}
+
 /* Video styles */
 video {
     position: fixed;
