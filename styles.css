@@ -8,7 +8,7 @@
 /* Prevent scrolling */
 html, body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-attachment: fixed;
     align-items: center;
     /* justify-content: center; */
     width: 183px;
@@ -131,9 +132,20 @@ p {
   position:relative;
 }
 
+.fade-in { 
+  opacity: 0; 
+  transform: translateY(20px) scale(.98); 
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+} 
+.fade-in.visible { 
+  opacity: 1; 
+  transform: translateY(0) scale(1); 
+}
+
 /* Video styles */
 video {
     position: fixed;
+    background-attachment: fixed;
     top: 49.9%;
     left: 155.5px; /* Leave exactly 183px on the left for the menu */
     width: calc(100% - 155.5px); /* Stretch the video to fill the remaining space */
