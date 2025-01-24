@@ -26,7 +26,7 @@ body {
 
 .title {
 margin: 20px 20px 0 0;
-font-size: 2rem;
+font-size: clamp(.2rem, 2vw, 2rem);
 color: black;
 }
 
@@ -46,7 +46,8 @@ ul {
 }
 
 li {
-  margin: 0 0 36px 0;
+  margin: 0 0 clamp(10px, 6vh, 36px) 0;
+  font-size: clamp(7px, 2vh, 19px);
 }
 
 a {
@@ -80,12 +81,12 @@ width: 150px; */
 }
 
 img {
-width: 15px;
-height: 15px;
-margin: 0 7px 20px 7px;
+width: clamp(7px, 1.5vh, 15px);
+height: auto;
+margin: 0 clamp(2px, .5vw, 7px) 20px clamp(2px, .5vw, 7px);
 }
 
-#start-button {
+/* #start-button {
   position: fixed;
   top: 50%;
   left: 55%;
@@ -111,11 +112,11 @@ margin: 0 7px 20px 7px;
 
 #start-button button:hover {
   background-color: #6f2232;
-}
+} */
 
 /* Section Styling */
 section {
-  margin-left: 155.5px; /* Leave exactly 183px on the left for the menu */
+  margin: 0 10% 0 15%; 
   width: calc(100% - 155.5px); /* Stretch the video to fill the remaining space */
   height: 90vh;
   display: flex;
@@ -126,7 +127,6 @@ section {
   font-size: 3rem;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #0b0b0c;
 }
 
 /* #section1 {
@@ -143,6 +143,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0 1% 0 0;
 }
 
 /* .runners {
@@ -150,13 +151,12 @@ section {
 } */
 
 p {
-  font-size: .7rem;
+  font-size: clamp(.1rem, 1vw, .7rem);
   text-align: right;
-  margin: 0px 0 0 0;
 }
 
 video {
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: clamp(300px, 80%, 920px); /* Dynamic size based on viewport width */
   height: auto; /* Maintain the aspect ratio */
   margin: 0 auto;
@@ -165,6 +165,7 @@ video {
 h6 {
   text-align: right;
   font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(7px, 4vh, 30px);
 }
 
 /* #section2 {
